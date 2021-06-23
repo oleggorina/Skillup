@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  // letter-spacing: 0.1em;
+  color: $color-gray;
+
+  font-family: $font-main;
+  font-size: $font-size;
+}
+a {
+  text-decoration: none;
+
+  color: $color-light;
+}
+h1 {
+  letter-spacing: 0.08em;
+
+  font-family: $font-header;
+  font-weight: 300;
+  line-height: 1.2;
+
+  @include lg-min {
+    font-size: 3.75rem;
+  }
+  @include lg-md {
+    font-size: 2.5rem;
+  }
+  @include md {
+    font-size: 1.875rem;
+  }
+}
+
+h2 {
+  letter-spacing: 0.1em;
+
+  color: $color-primary;
+
+  font-family: $font-header;
+  line-height: 1.2em;
+}
+p {
+  color: $color-gray;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 0.5s;
+  letter-spacing: 0.1em;
+
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+  }
+
+  &--light {
+    border: 2px solid $color-light;
+    background-color: rgba($color-light, 0.1);
+
+    @include lg-min {
+      min-width: 250px;
+      height: 60px;
+
+      font-size: 1.125rem;
+    }
+    @include lg-md {
+      min-width: 200px;
+      height: 50px;
+    }
+    @include md {
+      min-width: 170px;
+      height: 40px;
+    }
+  }
+
+  &--primary {
+    height: 60px;
+
+    border: 2px solid $color-primary;
+    background-color: rgba($color-primary, 0.8);
+
+    font-size: 1.125rem;
+
+    
+    &--size{
+      @include sm-min {
+        min-width: 350px;
+      }
+      @include sm {
+        width: 100%;
+        min-width: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Регистрация</h1>
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="../index.html">Главная страница</a>
+        </li>
+        <li>
+          <a href="articles.html">Статьи</a>
+        </li>
+        <li>
+          <a href="catalog.html">Каталог</a>
+        </li>
+        <li>
+          <a href="gallery.html">Галерея изображений</a>
+        </li>
+        <li>
+          <a href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <form action="register.php" method="GET">
+        <fieldset>
+          <legend><b>Регистрация нового пользователя</b></legend>
+          <label>Фамилия, Имя, Отчество
+            <input name="name" type="text" placeholder="Фамилия, Имя, Отчество" required></label>
+          <label>Добавьте фотографию
+            <input name="image" type="file"></label>
+          <label>Адрес электронной почты
+            <input name="email" type="email" placeholder="Email" required></label>
+          <label>Пароль
+            <input name="password" type="password" placeholder="Пароль" required></label>
+          <label>Адрес сайта
+            <input name="site" type="url" placeholder="mysite.name"></label>
+          <label for="sel">Выбрать пол
+            <select name="gender" id="sel">
+              <option value="male">Мужской</option>
+              <option value="female">Женский</option>
+            </select></label>
+          <label>Выбрать дату рождения
+            <input name="date" type="date"></label>
+          <label>Выбрать предпочитаемую кухню</label>
+          <label class="kitchen-check" for="cb1">Американская кухня
+            <input class="kitchen-check" name="kitchen" value="us" id="cb1" type="checkbox"></label>
+          <label class="kitchen-check" for="cb2">Грузинская кухня
+            <input class="kitchen-check" name="kitchen" value="ge" id="cb2" type="checkbox"></label>
+          <label class="kitchen-check" for="cb3">Японская кухня
+            <input name="kitchen" value="jp" id="cb3" type="checkbox"></label>
+
+          <label for="txt">О себе</label>
+          <textarea name="about" id="txt" cols="30" rows="10" placeholder="О себе"></textarea>
+          <button class="btn-sub" type="submit">Зарегистрироваться</button>
+          <button class="btn-res" type="reset">Очистить форму</button>
+        </fieldset>
+      </form>
+    </div>
+    <div class="copyright">
+      <p>&copy;Oleg Gorina</p>
+    </div>
+  </div>
+</body>
+
+</html>

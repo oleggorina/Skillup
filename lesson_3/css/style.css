@@ -1,0 +1,175 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background: url(../images/texture_2.png) right top no-repeat, url(../images/texture.png) left top repeat;
+}
+
+.container{
+  max-width: 1280px;
+  padding: 0px 20px;
+  margin: auto;
+  color: white;
+}
+
+.menu a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.05em;
+}
+
+.menu ul{
+  list-style: none;
+}
+
+.articles-heading h2{
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.07em;
+  border-bottom: 1px solid white;
+}
+
+.articles-heading p{
+  background-color:gray;
+}
+
+.articles-heading a{
+  text-decoration: none;
+}
+
+.read-more{
+  text-decoration: underline;
+}
+
+.read-more:hover{
+  text-decoration: none;
+  color: red;
+}
+
+.go-comments{
+  color: bisque;
+}
+
+.article-container h1{
+  text-align: center;
+}
+
+.article-container p::first-letter{
+  font-family: 'Dela Gothic One', cursive;
+  color: red;
+  font-size: 2em;
+}
+
+.category{
+  list-style-image: url(../images/category-icon.png);
+  font-size: 20px;
+  color: blanchedalmond;
+}
+
+.sub-category{
+  list-style-image: url(../images/sub-category-icon.png);
+  font-size: 16px;
+  color:coral;
+}
+
+.category ul{
+  width: 300px;
+}
+
+.new-label{
+  color: white;
+  background-color: darkorange;
+}
+
+.custom-background{
+  background: url(../images/texture_3.png) left top repeat;
+}
+
+.images img{
+  border: 2px solid white;
+}
+
+.images img:hover{
+  border-color: transparent;
+}
+
+fieldset{
+  max-width: 500px;
+  background-color: whitesmoke;
+  color: black;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+}
+
+input, select{
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+
+label{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="file"]{
+  padding: 0;
+}
+
+input[type="checkbox"]{
+  width: auto;
+}
+
+textarea{
+  width: 100%;
+  resize: vertical;
+  min-height: 50px;
+  max-height: 33vh;
+}
+
+input[type="text"]{
+  text-transform: capitalize;
+}
+
+legend{
+  background-color: whitesmoke;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.kitchen-check{
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.copyright{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.map{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-sub, .btn-res{
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.btn-sub:hover{
+  background-color: darkgreen;
+  color: white;
+}
+
+.btn-res:hover{
+  background-color: red;
+  color: white;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <table class="w-90">
+      <caption>Table #2</caption>
+      <tr>
+        <td class="w-40" colspan="2">1-2</td>
+        <td class="w-60">3 <span>Ширина 60%</span></td>
+      </tr>
+      <tr>
+        <td class="w-28">4 Ширина 28%</td>
+        <td colspan="2" rowspan="2">
+          <table class="w-80">
+            <caption>Вложенная таблица</caption>
+            <tr>
+              <td>1</td>
+              <td rowspan="3">2-5-8 Ширина 33%</td>
+              <td class="h-200" rowspan="2">3-6 Высота 200px</td>
+            </tr>
+            <tr>
+              <td class="h-200" rowspan="2">4-7 Высота 200px</td>
+            </tr>
+            <tr>
+              <td>9</td>
+            </tr>
+          </table>
+          <span>Ширина вложенной таблицы = 80%</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="w-28">7</td>
+      </tr>
+    </table>
+    <span>Ширина родительской таблицы = 90%</span>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <h1>Контакты</h1>
+    <div>
+      <ul>
+        <li>
+          <a href="../index.html">Главная страница</a>
+        </li>
+        <li>
+          <a href="articles.html">Статьи</a>
+        </li>
+        <li>
+          <a href="catalog.html">Каталог</a>
+        </li>
+        <li>
+          <a href="gallery.html">Галерея изображений</a>
+        </li>
+        <li>
+          <a href="register.html">Регистрация</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>Адрес организации</h2>
+      Apple<br>
+      One Apple Park Way<br>
+      Cupertino, CA 95014<br>
+      +1 (408) 996–10–10
+    </div>
+    <div>
+      <img src="../images/map.png" alt="Как добраться">
+    </div>
+    <div>
+      <form action="contacts.php" method="GET">
+        <fieldset>
+          <legend><b>Форма обратной связи</b></legend>
+          <label>Имя
+            <input name="text" type="text" placeholder="Имя">
+          </label>
+          <label>Телефон
+            <input name="tel" type="tel" placeholder="Телефон">
+          </label>
+          <label>Email
+            <input name="email" type="email" placeholder="Email">
+          </label>
+          <label for="txt">Задайте вопрос</label>
+          <textarea name="question" id="txt" cols="30" rows="10" placeholder="Задайте вопрос"></textarea>
+          <button type="submit">Отправить</button>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  <div>
+    &copy;
+  </div>
+</body>
+
+</html>

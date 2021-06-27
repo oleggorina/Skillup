@@ -1,17 +1,25 @@
 .posts{
   @include lg-min{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: $gap * 5;
+    padding-bottom: $gap * 5;
   }
-  h2{
-    margin-top: 0;
-    @include lg-min{
-      margin-bottom: 56px;
-      font-size: 2.5rem;
-    }
+  @include lg-md{
+    padding-top: $gap * 4;
+    padding-bottom: $gap * 4;
+  }
+  @include md{
+    padding-top: $gap * 3;
+    padding-bottom: $gap * 3;
   }
   &__container{
     @extend %container;
+  }
+  h2{
+    margin-top: 0;
+    @include sm-min{
+      margin-bottom: 56px;
+      font-size: 2.5rem;
+    }
   }
   &__grid{
     display: grid;
@@ -21,17 +29,88 @@
       grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
       grid-template-columns: repeat(4, 1fr);
     }
-  }
-  &-item{
-
+    @include lg-md{
+      grid-template-areas: "p1 p1 p2" "p3 p4 p4" "p5 p5 p6";
+      grid-template-columns: repeat(3, 1fr );
+    }
+    @include md-sm{
+      grid-template-areas: "p1 p2" "p3 p4" "p5 p6";
+      grid-template-columns: 1fr 1fr;
+    }
+    @include sm{
+      grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
+      grid-template-columns: 1fr;
+    }
   }
   &__actions{
-    display: flex;
-    justify-content: center;
+    @include sm-min{
+      display: flex;
+      justify-content: center;
+    }
+    .btn {
+      &--primary {
+        color: $color-light;
+        cursor: pointer;
+        }
+      }
+    }
+  }
+.post{
+  &-item{
+    transition: background-color 0.5s;
+    background-color: lighten($color-gray-light, 5%);
+    &:hover{
+      background-color: darken($color-gray-light, 5%);
+      .post-item__image img{
+        transform: scale(1.1);
+      }
+      h3{
+        color: $color-primary;
+      }
+      p{
+        color: $color-primary;
+      }
+    }
+    &:nth-of-type(1){
+      grid-area: p1;
+    }
+    &__link{
+      display: grid;
+      overflow: hidden;
+      height: 100%;
+      grid-template-rows: 300px 1fr;
+    }
+    &__image{
+      display: flex;
+      overflow: hidden;
+      align-content: center;
+      justify-content: center;
+      background-color: $color-primary;
+      img{
+        width: 100%;
+        transition: transform 0.5s;
+        object-fit: cover;
+      }
+    }
+    &__caption{
+      display: grid;
+      align-content: center;
+      padding: $gap;
+      h3{
+        transition: color 0.5s;
+        text-align: center;
+        font-family: $font-header;
+        
+      }
+      p{
+        transition: color 0.5s;
+        text-align: center;
+      }
+    }
   }
 }
-@for $i from 1 through 6 {
-  .posts-item:nth-of-type(#{$i}) {
+@for $i from 1 through 9 {
+  .post-item:nth-of-type(#{$i}) {
     grid-area: p#{$i};
   }
 }

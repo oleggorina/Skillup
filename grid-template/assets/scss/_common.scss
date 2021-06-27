@@ -39,8 +39,20 @@ h2 {
   font-family: $font-header;
   line-height: 1.2em;
 }
+h3 {
+  letter-spacing: 0.05em;
+
+  color: $color-gray;
+
+  font-size: 1.125rem;
+}
 p {
   color: $color-gray;
+}
+a {
+  text-decoration: none;
+
+  color: $color-light;
 }
 .btn {
   display: flex;
@@ -84,8 +96,8 @@ p {
 
     font-size: 1.125rem;
 
-    
-    &--size{
+
+    &--size {
       @include sm-min {
         min-width: 350px;
       }

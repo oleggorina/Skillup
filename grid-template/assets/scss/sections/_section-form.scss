@@ -20,54 +20,54 @@
         grid-column: 1 / span 2;
       }
     }
-&__input {
-  display: block;
+    &__input {
+      display: block;
 
-  width: 100%;
-  height: 60px;
-  padding-right: 30px;
-  padding-left: 30px;
+      width: 100%;
+      height: 60px;
+      padding-right: 30px;
+      padding-left: 30px;
 
-  transition: background-color 0.5s, border-color 0.5s;
-  letter-spacing: 0.15em;
+      transition: background-color 0.5s, border-color 0.5s;
+      letter-spacing: 0.15em;
 
-  color: $color-light;
-  border: 2px solid rgba($color-light, 0);
-  border-bottom-color: rgba($color-light, 0.25);
-  background-color: rgba($color-light, 0.05);
+      color: $color-light;
+      border: 2px solid rgba($color-light, 0);
+      border-bottom-color: rgba($color-light, 0.25);
+      background-color: rgba($color-light, 0.05);
 
-  font-size: 1.125rem;
-  &::placeholder {
-    color: $color-gray;
-  }
-  &:hover,
-  &:focus {
-    border-color: rgba($color-light, 0.15);
-    border-bottom-color: $color-light;
-    outline: 0;
-    outline-offset: 0;
-    background-color: rgba($color-light, 0.15);
-    &::placeholder {
-      color: lighten($color-gray, 15%);
+      font-size: 1.125rem;
+      &::placeholder {
+        color: $color-gray;
+      }
+      &:hover,
+      &:focus {
+        border-color: rgba($color-light, 0.15);
+        border-bottom-color: $color-light;
+        outline: 0;
+        outline-offset: 0;
+        background-color: rgba($color-light, 0.15);
+        &::placeholder {
+          color: lighten($color-gray, 15%);
+        }
+      }
     }
-  }
-}
-.btn {
-  &--primary {
-    width: 100%;
+    .btn {
+      &--primary {
+        width: 100%;
 
-    color: $color-light;
-    border-color: rgba($color-light, 0);
-    border-bottom-color: rgba($color-light, 0.20);
-    background-color: rgba($color-light, 0.10);
-    &:hover,
-    &:focus {
-      cursor: pointer;
+        color: $color-light;
+        border-color: rgba($color-light, 0);
+        border-bottom-color: rgba($color-light, 0.20);
+        background-color: rgba($color-light, 0.10);
+        &:hover,
+        &:focus {
+          cursor: pointer;
 
-      border-color: $color-light;
-      background-color: $color-accent;
+          border-color: $color-light;
+          background-color: $color-accent;
+        }
+      }
     }
-  }
-}
   }
 }

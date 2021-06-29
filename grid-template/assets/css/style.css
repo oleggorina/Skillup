@@ -375,7 +375,7 @@ h1 {
   letter-spacing: 0.08em;
   font-family: "Roboto Slab", serif;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.2em;
 }
 
 h2 {
@@ -889,8 +889,8 @@ a {
 }
 
 .posts__actions .btn--primary {
-  color: #ffffff;
   cursor: pointer;
+  color: #ffffff;
 }
 
 .post-item {
@@ -1081,7 +1081,7 @@ a {
 }
 
 @media (min-width: 576px) {
-  .btn--primary--size {
+  .btn--size {
     min-width: 350px;
   }
   .about__content p {
@@ -1296,7 +1296,7 @@ a {
 }
 
 @media (max-width: 575.8px) {
-  .btn--primary--size {
+  .btn--size {
     width: 100%;
     min-width: auto;
   }

@@ -95,16 +95,14 @@ a {
     background-color: rgba($color-primary, 0.8);
 
     font-size: 1.125rem;
-
-
-    &--size {
-      @include sm-min {
-        min-width: 350px;
-      }
-      @include sm {
-        width: 100%;
-        min-width: auto;
-      }
+  }
+  &--size {
+    @include sm-min {
+      min-width: 350px;
+    }
+    @include sm {
+      width: 100%;
+      min-width: auto;
     }
   }
 }

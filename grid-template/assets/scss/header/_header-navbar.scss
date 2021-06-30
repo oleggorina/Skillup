@@ -12,7 +12,8 @@
     @include md-min {
       display: grid;
       justify-content: end;
-
+      width: 100%;
+      margin: 0 -10px 0 0;
       grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
     }
     @include md {

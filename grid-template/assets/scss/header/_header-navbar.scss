@@ -1,19 +1,20 @@
 .header-navbar {
-  @include md {
-    display: flex;
-    justify-content: flex-end;
-  }
-  &__list {
-    display: grid;
-    justify-content: end;
+  display: grid;
+  align-items: center;
 
-    grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+  letter-spacing: 0.1em;
+
+  justify-items: end;
+
+  &__list {
     @include unlist(0 (-$gap) 0 0);
     @include md-min {
       display: grid;
       justify-content: end;
+
       width: 100%;
       margin: 0 -10px 0 0;
+
       grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
     }
     @include md {

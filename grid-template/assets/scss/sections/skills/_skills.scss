@@ -14,20 +14,24 @@
     @include lg-min {
       gap: $gap / 2;
       grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
+      grid-template-columns: repeat (4, 1fr);
     }
     @include lg-md {
       gap: $gap / 2;
       grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";
+      grid-template-columns: repeat (3, 1fr);
     }
     @include md-sm {
       gap: $gap / 2;
       grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
+      grid-template-columns: 1fr 1fr;
     }
     @include sm {
       gap: $gap;
       grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
+      grid-template-columns: 1fr;
     }
-    @media (min-height: 641px) {
+    @media (min-height: 691px) {
       grid-auto-rows: calc(33.3333vh - 40px / 3);
     }
     @media (max-height: 640px) {

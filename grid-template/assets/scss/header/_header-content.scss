@@ -1,6 +1,8 @@
 .header-content {
   position: relative;
   &__container {
+    display: grid;
+
     @extend %container;
   }
   &__title {

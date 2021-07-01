@@ -1,9 +1,9 @@
-@mixin abs-position($t: 0, $r: 0, $b: 0, $l: 0) {
+@mixin abs-position($top: 0, $right: 0, $bottom: 0, $left: 0) {
   position: absolute;
-  top: $t;
-  right: $r;
-  bottom: $b;
-  left: $l;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
 }
 
 @mixin unlist($m: 0, $p: 0) {

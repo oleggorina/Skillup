@@ -9,7 +9,7 @@
   &__container {
     display: grid;
 
-    margin-bottom: $gap;
+    padding-bottom: $gap;
 
     @include lg-min {
       gap: $gap / 2;

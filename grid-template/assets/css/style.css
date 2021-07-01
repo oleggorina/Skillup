@@ -639,6 +639,12 @@ a {
 
 .skill-item {
   position: relative;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  justify-items: center;
   overflow: hidden;
 }
 
@@ -707,7 +713,6 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
   height: 100%;
   padding: 20px;
   -webkit-transition: color 0.5s;
@@ -1020,7 +1025,7 @@ a {
 
 .skills__container {
   display: grid;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .skills__actions {

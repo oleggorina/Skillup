@@ -1,6 +1,9 @@
 .skill-item {
   position: relative;
-
+  display: grid;
+  align-items: center;
+  padding: $gap;
+  justify-items: center;
   overflow: hidden;
   &:hover {
     .skill-item__overlay {
@@ -53,7 +56,7 @@
     justify-content: center;
 
     height: 100%;
-    padding: 20px;
+    padding: $gap;
 
     transition: color 0.5s;
   }

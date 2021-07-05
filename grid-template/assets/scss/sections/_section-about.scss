@@ -85,12 +85,13 @@
           height: 200px;
 
           content: "";
+
           background-color: rgba($color-gray, 0.1);
 
           @include lg-min {
             right: -50px;
           }
-          @include lg-md{
+          @include lg-md {
             right: -$gap;
           }
           @include md-sm {

@@ -85,13 +85,17 @@ a {
     @include md-sm {
       min-width: 170px;
       height: 40px;
+
       letter-spacing: 0.05em;
+
       font-size: 1rem;
     }
-    @include sm{
+    @include sm {
       min-width: 170px;
       height: $gap * 2;
+
       letter-spacing: 0.05em;
+
       font-size: 1rem;
     }
   }

@@ -1,10 +1,13 @@
 .skill-item {
   position: relative;
+
   display: grid;
-  align-items: center;
-  padding: $gap;
-  justify-items: center;
   overflow: hidden;
+  align-items: center;
+
+  padding: $gap;
+
+  justify-items: center;
   &:hover {
     .skill-item__overlay {
       opacity: 0.95 !important;

@@ -32,6 +32,11 @@
 
       font-size: 1.5rem;
     }
+    @include sm{
+      margin-bottom: 2.25rem;
+      text-align: center;
+      font-size: 1.5rem;
+    }
   }
   &__grid {
     display: grid;

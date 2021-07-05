@@ -1309,6 +1309,11 @@ a {
   .about__content p:first-of-type:after {
     display: none;
   }
+  .posts h2 {
+    margin-bottom: 2.25rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
   .posts__grid {
     grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
     grid-template-columns: 1fr;

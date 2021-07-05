@@ -519,7 +519,7 @@ a {
 .header-navbar__btn {
   position: relative;
   width: 30px;
-  height: 22.5px;
+  height: 23px;
   margin: 20px 0;
   cursor: pointer;
   -webkit-transition: 0.5s ease-in-out;
@@ -544,73 +544,23 @@ a {
           transform: rotate(0deg);
   opacity: 1;
   background: #ffffff;
+  border-radius: 3px;
 }
 
-.header-navbar__btn-row:nth-child(even) {
-  left: 50%;
-  border-radius: 0 3px 3px 0;
-}
-
-.header-navbar__btn-row:nth-child(odd) {
-  left: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.header-navbar__btn-row:nth-child(1), .header-navbar__btn-row:nth-child(2) {
+.header-navbar__btn-row:nth-of-type(1) {
   top: 0;
 }
 
-.header-navbar__btn-row:nth-child(3), .header-navbar__btn-row:nth-child(4) {
+.header-navbar__btn-row:nth-of-type(2) {
   top: 9px;
 }
 
-.header-navbar__btn-row:nth-child(5), .header-navbar__btn-row:nth-child(6) {
+.header-navbar__btn-row:nth-of-type(3) {
   top: 18px;
 }
 
-.header-navbar__btn.active span:nth-child(1), .header-navbar__btn.active span:nth-child(6) {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.header-navbar__btn.active span:nth-child(2), .header-navbar__btn.active span:nth-child(5) {
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.header-navbar__btn.active span:nth-child(1) {
-  top: 3.5px;
-  left: 2.5px;
-}
-
-.header-navbar__btn.active span:nth-child(2) {
-  top: 3.5px;
-  left: calc(50% - 2.5px);
-}
-
-.header-navbar__btn.active span:nth-child(3) {
-  left: -50%;
-  opacity: 0;
-}
-
-.header-navbar__btn.active span:nth-child(4) {
-  left: 100%;
-  opacity: 0;
-}
-
-.header-navbar__btn.active span:nth-child(5) {
-  top: 14.5px;
-  left: 2.5px;
-}
-
-.header-navbar__btn.active span:nth-child(6) {
-  top: 14.5px;
-  left: calc(50% - 2.5px);
-}
-
-.header-navbar__link:hover, .header-navbar__link:focus {
+.header-navbar .header-navbar__link:hover,
+.header-navbar .header-navbar__link:focus {
   color: #d66926;
 }
 
@@ -1240,12 +1190,10 @@ a {
   h1 {
     font-size: 1.875rem;
   }
-  .btn--light {
-    min-width: 170px;
-    height: 40px;
-  }
   .header-menu {
     background-color: rgba(68, 89, 110, 0.25);
+    -webkit-box-shadow: -3px 3px 20px -10px black;
+            box-shadow: -3px 3px 20px -10px black;
   }
   .header-navbar__list {
     position: absolute;
@@ -1260,6 +1208,9 @@ a {
   }
   .header-navbar__item {
     margin: 20px;
+  }
+  .header-navbar__btn {
+    display: block;
   }
   .header-content__title {
     margin: 0 0 33px 0;
@@ -1278,6 +1229,12 @@ a {
 }
 
 @media (max-width: 767.8px) and (min-width: 576px) {
+  .btn--light {
+    min-width: 170px;
+    height: 40px;
+    letter-spacing: 0.05em;
+    font-size: 1rem;
+  }
   .about h2 {
     margin-bottom: 36px;
     font-size: 1.5rem;
@@ -1313,6 +1270,12 @@ a {
 }
 
 @media (max-width: 575.8px) {
+  .btn--light {
+    min-width: 170px;
+    height: 40px;
+    letter-spacing: 0.05em;
+    font-size: 1rem;
+  }
   .btn--size {
     width: 100%;
     min-width: auto;

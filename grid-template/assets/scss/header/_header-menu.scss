@@ -8,6 +8,7 @@
 
   @include md {
     background-color: rgba($color-gray-dark, 0.25);
+    box-shadow: -3px 3px $gap -10px black;
   }
 
   &__container {

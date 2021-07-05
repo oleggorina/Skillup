@@ -60,7 +60,7 @@
     position: relative;
 
     width: 30px;
-    height: 22.5px;
+    height: 23px;
     margin: $gap 0;
 
     cursor: pointer;
@@ -69,6 +69,9 @@
 
     @include md-min {
       display: none;
+    }
+    @include md{
+      display: block;
     }
     &-row {
       position: absolute;
@@ -84,75 +87,21 @@
 
       opacity: 1;
       background: $color-light;
-      &:nth-child(even) {
-        left: 50%;
+      border-radius: 3px;
 
-        border-radius: 0 3px 3px 0;
-      }
-      &:nth-child(odd) {
-        left: 0;
-
-        border-radius: 3px 0 0 3px;
-      }
-      &:nth-child(1),
-      &:nth-child(2) {
+      &:nth-of-type(1){
         top: 0;
       }
-
-      &:nth-child(3),
-      &:nth-child(4) {
+      &:nth-of-type(2){
         top: 9px;
       }
-
-      &:nth-child(5),
-      &:nth-child(6) {
+      &:nth-of-type(3){
         top: 18px;
       }
-    }
-    &.active span {
-      &:nth-child(1),
-      &:nth-child(6) {
-        transform: rotate(45deg);
-      }
-      &:nth-child(2),
-      &:nth-child(5) {
-        transform: rotate(-45deg);
-      }
-      &:nth-child(1) {
-        top: 3.5px;
-        left: 2.5px;
-      }
-
-      &:nth-child(2) {
-        top: 3.5px;
-        left: calc(50% - 2.5px);
-      }
-
-      &:nth-child(3) {
-        left: -50%;
-
-        opacity: 0;
-      }
-
-      &:nth-child(4) {
-        left: 100%;
-
-        opacity: 0;
-      }
-
-      &:nth-child(5) {
-        top: 14.5px;
-        left: 2.5px;
-      }
-
-      &:nth-child(6) {
-        top: 14.5px;
-        left: calc(50% - 2.5px);
-      }
-    }
   }
 }
 .header-navbar__link:hover,
 .header-navbar__link:focus {
   color: #d66926;
+}
 }

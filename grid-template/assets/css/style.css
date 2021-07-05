@@ -1063,7 +1063,7 @@ a {
 
 @media (min-height: 691px) {
   .skills__container {
-    grid-auto-rows: calc(33.3333vh - 40px / 3);
+    grid-auto-rows: calc(33.33333vh - 13.3333333px);
   }
 }
 
@@ -1271,9 +1271,9 @@ a {
   }
 }
 
-@media (max-height: 640px) {
+@media (max-height: 690px) {
   .skills__container {
-    grid-auto-rows: 200px;
+    grid-auto-rows: calc(230px - 13.3333333px);
   }
 }
 

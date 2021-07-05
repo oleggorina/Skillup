@@ -31,11 +31,11 @@
       grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
       grid-template-columns: 1fr;
     }
-    @media (min-height: 691px) {
-      grid-auto-rows: calc(33.3333vh - 40px / 3);
+    @media (max-height: 690px) {
+      grid-auto-rows: calc(230px - 13.3333333px);
     }
-    @media (max-height: 640px) {
-      grid-auto-rows: 200px;
+    @media (min-height: 691px) {
+      grid-auto-rows: calc(33.33333vh - 13.3333333px);
     }
   }
   &__actions {

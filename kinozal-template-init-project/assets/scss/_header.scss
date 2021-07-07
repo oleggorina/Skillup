@@ -1,0 +1,17 @@
+header{
+  @extend %margin-bottom-lg;
+}
+
+.header-logo{
+  padding: 100px 0;
+  text-align: center;
+
+  &__title{
+    display: block;
+    color: $color-accent;
+  }
+  &__description{
+    display: block;
+    color: $color-white;
+  }
+}

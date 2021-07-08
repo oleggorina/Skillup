@@ -1,37 +1,52 @@
-header{
-  @extend %margin-bottom-lg;
+header
+{
+    @extend %margin-bottom-lg;
 }
 
-.header-logo{
-  padding: 100px 0;
-  text-align: center;
+.header-logo
+{
+    padding: 100px 0;
 
-  background-color: $color-dark;
-  background-image: url(../img/header-bg.jpg);
-  background-position: center;
-  background-size: cover;
+    text-align: center;
 
-  &__title{
-    display: block;
-    color: $color-accent;
-    @extend %text-shadow;
-    font-size: 3.5rem;
-    letter-spacing: 0.33em;
-    margin-right: -0.33em;
-    font-family: $font-header;
-    
-    @include xs-min{
-      font-size: 3.5rem;
+    background-color: $color-dark;
+    background-image: url(../img/header-bg.jpg);
+    background-position: center;
+    background-size: cover;
+
+    &__title
+    {
+        font-family: $font-header;
+        font-size: 3.5rem;
+
+        display: block;
+
+        margin-right: -.33em;
+
+        letter-spacing: .33em;
+
+        color: $color-accent;
+
+        @extend %text-shadow;
+        @include xs-min
+        {
+            font-size: 3.5rem;
+        }
+        @include xs
+        {
+            font-size: 2.5rem;
+        }
     }
-    @include xs{
-      font-size: 2.5rem;
+    &__description
+    {
+        font-size: 1.15rem;
+
+        display: block;
+
+        letter-spacing: .2em;
+
+        color: $color-white;
+
+        @extend %text-shadow;
     }
-  }
-  &__description{
-    display: block;
-    color: $color-white;
-    @extend %text-shadow;
-    font-size: 1.15rem;
-    letter-spacing: 0.2em;
-  }
 }

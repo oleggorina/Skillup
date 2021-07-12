@@ -35,22 +35,25 @@
 }
 
 .panel-info {
+  margin-bottom: 30px;
   border: none;
   background-color: #ededed;
-  margin-bottom: 30px;
 }
-
-.panel-info > .panel-heading {
-  color: #ffffff;
-  background-color: #df8a13;
-  border: none;
+.panel > .panel-heading {
   font-size: 1.2rem;
   letter-spacing: 0.1em;
+  color: #fff;
+  border: none;
+  background-color: #df8a13;
 }
 
 .panel-body {
   border: 1px solid #d5d5d5;
   border-radius: 0 0 4px 4px;
+}
+
+.input-lg, .input-group-lg > .form-control {
+  font-size: 0.875rem;
 }
 
 html {
@@ -85,18 +88,18 @@ h1 {
   background-size: cover;
 }
 .header-logo__title {
-  display: block;
-  color: #df8a13;
-  font-size: 3.5rem;
-  letter-spacing: 0.33em;
-  margin-right: -0.33em;
   font-family: "PT Serif", serif;
+  font-size: 3.5rem;
+  display: block;
+  margin-right: -0.33em;
+  letter-spacing: 0.33em;
+  color: #df8a13;
 }
 .header-logo__description {
-  display: block;
-  color: #ffffff;
   font-size: 1.15rem;
+  display: block;
   letter-spacing: 0.2em;
+  color: #fff;
 }
 
 .left-sidebar .panel:last-of-type {
@@ -104,11 +107,30 @@ h1 {
 }
 
 .vertical-slider {
-  border-radius: 4px;
   overflow: hidden;
+  border-radius: 4px;
 }
 .vertical-slider img {
   width: 100%;
+}
+
+.user-login {
+  position: relative;
+}
+.user-login__tabs {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  border: none;
+}
+.user-login__tabs a {
+  background-color: transparent !important;
+  border: none !important;
+  color: #d5d5d5;
+  padding: 14px 5px 11px !important;
+}
+.user-login__tabs .active a {
+  color: #fff !important;
 }
 @media (min-width: 576px) {
   .header-logo__title {

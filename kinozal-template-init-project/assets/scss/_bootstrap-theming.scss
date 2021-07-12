@@ -79,15 +79,15 @@
     margin-right: 0;
 }
 
-.panel-info
+.panel
 {
+    &-info{
     margin-bottom: $gap * 2;
 
     border: none;
     background-color: darken($color-white, 7%);
-}
-
-.panel-info > .panel-heading
+    }
+    >.panel-heading
 {
     font-size: 1.2rem;
 
@@ -97,9 +97,17 @@
     border: none;
     background-color: $color-accent;
 }
+}
 
 .panel-body
 {
     border: 1px solid $color-gray;
     border-radius: 0 0 4px 4px;
+}
+
+.input {
+    &-lg,
+    &-group-lg > .form-control{
+    font-size: 0.875rem;
+    }
 }

@@ -64,7 +64,7 @@
   <div class="container">
     <div class="row">
       <div class="main col-lg-9 col-lg-push-3 col-md-8 col-md-push-4">
-        <h1>НОВЫЕ ФИЛЬМЫ</h1>
+        <h1>Новые фильмы</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum animi id quo, hic minus atque architecto,
           accusantium corrupti aspernatur ipsa est. Minima ea dolore voluptates aliquam recusandae quisquam qui
           perspiciatis!</p>
@@ -109,12 +109,68 @@
 
         <div class="site-search panel panel-info">
           <div class="panel-heading">Поиск</div>
-          <div class="panel-body">Content</div>
+          <div class="panel-body">
+            <form action="search">
+              <div class="input-group input-group-lg">
+                <input type="text" class="form-control" placeholder="Поиск по сайту">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">
+                    <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                </span>
+              </div>
+            </form>
+          </div>
         </div>
 
         <div class="user-login panel panel-info">
           <div class="panel-heading">Пользователь</div>
-          <div class="panel-body">Content</div>
+          <div class="panel-body">
+
+              <!-- Nav tabs -->
+              <ul class="user-login__tabs nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#user-login-sidebar" aria-controls="user-login-sidebar" role="tab" data-toggle="tab">
+                  <span class="glyphicon glyphicon-log-in"></span>
+                </a></li>
+                <li role="presentation"><a href="#user-registration-sidebar" aria-controls="user-registration-sidebar" role="tab" data-toggle="tab">
+                  <span class="glyphicon glyphicon-user"></span>
+                </a></li>
+              </ul>
+            
+              <!-- Tab panes -->
+              <div class="user-login__content tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="user-login-sidebar">
+                  <form action="login">
+                    <div class="form-group">
+                    <input class="form-control input-lg" type="text" placeholder="Логин">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="password" placeholder="Пароль">
+                  </div>
+                    <button class="btn btn-default btn-block btn-lg" type="submit">Вход</button>
+                  </form>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="user-registration-sidebar">
+                  <form action="login">
+                    <div class="form-group">
+                    <input class="form-control input-lg" type="text" placeholder="Логин">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="password" placeholder="Пароль">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="email" placeholder="Email">
+                  </div>
+                    <button class="btn btn-default btn-block btn-lg" type="submit">Регистрация</button>
+                  </form>
+                </div>
+              </div>
+            
+
+            
+
+            
+          </div>
         </div>
 
         <div class="site-news panel panel-info">

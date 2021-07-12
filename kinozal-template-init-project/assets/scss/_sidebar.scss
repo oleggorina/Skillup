@@ -18,3 +18,22 @@
         width: 100%;
     }
 }
+
+.user-login{
+    position: relative;
+    &__tabs{
+        position: absolute;
+        top: 0;
+        right: 10px;
+        border: none;
+        a{
+            background-color: transparent !important;
+            border: none !important;
+            color: $color-gray;
+            padding: 14px 5px 11px !important;
+        }
+        .active a{
+            color: $color-white !important;
+        }
+    }
+}

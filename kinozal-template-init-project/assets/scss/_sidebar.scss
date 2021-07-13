@@ -19,58 +19,120 @@
     }
 }
 
-.user-login{
+.user-login
+{
     position: relative;
-    &__tabs{
+    &__tabs
+    {
         position: absolute;
         top: 0;
         right: 10px;
+
         border: none;
-        a{
-            background-color: transparent !important;
-            border: none !important;
-            color: $color-gray;
+        a
+        {
             padding: 14px 5px 11px !important;
+
+            color: $color-gray;
+            border: none !important;
+            background-color: transparent !important;
         }
-        .active a{
+        .active a
+        {
             color: $color-white !important;
         }
     }
 }
 
-.site-news-item{
-    clear: both;
+.site-news-item
+{
     position: relative;
-    &:not(:last-of-type){
+
+    clear: both;
+    &:not(:last-of-type)
+    {
         min-height: 85px;
         margin-bottom: $gap;
     }
-    &::after{
+    &::after
+    {
         position: absolute;
         right: 0;
         bottom: 0;
+
         width: calc(100% - 85px);
         height: 1px;
-        content: "";
+
+        content: '';
+
         background-color: $color-gray;
     }
-    &__image{
-      float: left;
-      width: 75px;
-      margin: 0 10px 10px 0;
-      img{
-          width: 100%;
-      }
+    &__image
+    {
+        float: left;
+
+        width: 75px;
+        margin: 0 10px 10px 0;
+        img
+        {
+            width: 100%;
+        }
     }
-    &__title{
+    &__title
+    {
         margin-bottom: 10px;
-      a{
-          @include block-shortener(1rem, 1.5, 50px, 2);
-      }  
+        a
+        {
+            @include block-shortener(1rem, 1.5, 50px, 2);
+        }
     }
-    &__date{
-      font-size: 0.8rem;
-      text-align: right;
-      color: $color-gray-dark;
+    &__date
+    {
+        font-size: .8rem;
+
+        text-align: right;
+
+        color: $color-gray-dark;
+    }
+}
+
+.top-films
+{
+    &__body
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    &__list{
+        margin-bottom: 0;
+    }
+    &__item{
+        margin-left: -1px;
+        margin-right: -1px;
+        background-color: transparent;
+        color: $color-primary !important;
+        &:first-child{
+            border-top: none;
+            border-radius: 0;
+        }
+        &:last-child{
+            border-bottom: none;
+            border-radius: 0;
+        }
+        &:hover,
+        &:focus{
+            background-color: $color-accent !important;
+            color: $color-white !important;
+            border-color: $color-accent;
+            .badge{
+                background-color: $color-dark;
+            }
+        }
+    }
+    &__badge{
+        position: absolute;
+        top: 50%;
+        right: $gap;
+        transform: translateY(-50%);
     }
 }

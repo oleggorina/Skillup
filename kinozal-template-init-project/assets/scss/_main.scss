@@ -1,0 +1,66 @@
+.main
+{
+    @extend %margin-bottom-lg;
+
+    .site-search
+    {
+        margin-bottom: $gap * 3;
+    }
+    .user-login
+    {
+        margin-bottom: $gap * 4;
+    }
+}
+
+.new-films
+{
+    &-row
+    {
+        margin-right: -15px / 2;
+        margin-left: -15px / 2;
+        margin-bottom: -15px;
+    }
+    &-title{
+      @include xs-min{
+        font-size: 3rem;
+      }
+      &::after{
+        position: absolute;
+        width: 100%;
+        margin: 0.85em 0 0 $gap;
+        content: "";
+        border-bottom: 3px solid $color-accent;
+      }
+    }
+    &-item
+    {
+        padding-right: 15px / 2;
+        padding-left: 15px / 2;
+        margin-bottom: 15px;
+
+        &__title
+        {
+            @include text-shortener;
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        &__caption{
+          text-align: center;
+        }
+        &__thumbnail{
+          margin-bottom: 0;
+          &:hover{
+            background-color: $color-accent-light;
+          }
+          &:hover h3{
+            color: $color-white;
+          }
+        }
+    }
+}
+
+section{
+  position: relative;
+  overflow: hidden;
+}

@@ -103,36 +103,45 @@
         padding-right: 0;
         padding-left: 0;
     }
-    &__list{
+    &__list
+    {
         margin-bottom: 0;
     }
-    &__item{
-        margin-left: -1px;
+    &__item
+    {
         margin-right: -1px;
-        background-color: transparent;
+        margin-left: -1px;
+
         color: $color-primary !important;
-        &:first-child{
+        background-color: transparent;
+        &:first-child
+        {
             border-top: none;
             border-radius: 0;
         }
-        &:last-child{
+        &:last-child
+        {
             border-bottom: none;
             border-radius: 0;
         }
         &:hover,
-        &:focus{
-            background-color: $color-accent !important;
+        &:focus
+        {
             color: $color-white !important;
             border-color: $color-accent;
-            .badge{
+            background-color: $color-accent !important;
+            .badge
+            {
                 background-color: $color-dark;
             }
         }
     }
-    &__badge{
+    &__badge
+    {
         position: absolute;
         top: 50%;
         right: $gap;
+
         transform: translateY(-50%);
     }
 }

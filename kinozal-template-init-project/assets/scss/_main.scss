@@ -28,6 +28,10 @@
 
             margin: -9.99999999px 0 1em 0;
         }
+        @include xs{
+          margin: 0 0 1em;
+          font-size: 2rem;
+        }
         &::after
         {
             position: absolute;
@@ -45,7 +49,6 @@
         margin-bottom: 15px;
         padding-right: 7.5px;
         padding-left: 7.5px;
-
         &__title
         {
             font-size: 1rem;
@@ -71,6 +74,9 @@
                 color: $color-white;
             }
         }
+        &__image{
+          width: 100%;
+        }
     }
 }
 
@@ -86,6 +92,10 @@
     @include xs-min{
       margin: 60px 0 45px 45px;
       font-size: 2.5rem;
+    }
+    @include xs{
+      margin: 45px 0 30px 45px;
+      font-size: 1.75rem;
     }
     &::before{
       position: absolute;
@@ -137,6 +147,9 @@
                 color: $color-white;
             }
         }
+        &__image{
+          width: 100%;
+        }
     }
 }
 
@@ -145,6 +158,10 @@
     @include xs-min{
       margin: 60px 0 45px 45px;
       font-size: 2.5rem;
+    }
+    @include xs{
+      margin: 45px 0 30px 45px;
+      font-size: 1.75rem;
     }
     &::before{
       position: absolute;
@@ -166,6 +183,10 @@
     }
   }
   &-item{
+    @include xs{
+      h3{
+        font-size: 1.25rem;
+      }
     &:hover{
       h3 > a{
         color: $color-accent;
@@ -177,6 +198,7 @@
       .movie-news-item__btn{
         background-color: $color-accent;
       }
+      }
     }
     &__btn{
       float: right;
@@ -185,6 +207,10 @@
     }
     &__content{
       text-align: justify;
+    }
+    &__thumbnail{
+      margin-bottom: 0;
+      transition: background-color 0.25s;
     }
   }
 }

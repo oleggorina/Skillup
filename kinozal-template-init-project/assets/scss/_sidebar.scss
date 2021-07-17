@@ -17,6 +17,9 @@
     {
         width: 100%;
     }
+    @include md{
+        display: none;
+    }
 }
 
 .user-login

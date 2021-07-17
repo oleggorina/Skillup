@@ -152,6 +152,9 @@ h2 {
 .new-films-item__thumbnail:hover h3 {
   color: #fff;
 }
+.new-films-item__image {
+  width: 100%;
+}
 
 .top-films-week-row {
   margin-right: -7.5px;
@@ -200,6 +203,9 @@ h2 {
 .top-films-week-item__thumbnail:hover h3 {
   color: #fff;
 }
+.top-films-week-item__image {
+  width: 100%;
+}
 .movie-news-title::before {
   position: absolute;
   width: 30px;
@@ -215,16 +221,6 @@ h2 {
   content: "";
   border-bottom: 3px solid #f0ad4f;
 }
-.movie-news-item:hover h3 > a {
-  color: #df8a13;
-}
-.movie-news-item:hover .thumbnail {
-  background-color: #df8a13;
-  border-color: #df8a13;
-}
-.movie-news-item:hover .movie-news-item__btn {
-  background-color: #df8a13;
-}
 .movie-news-item__btn {
   float: right;
   margin-bottom: 30px;
@@ -234,6 +230,12 @@ h2 {
 }
 .movie-news-item__content {
   text-align: justify;
+}
+.movie-news-item__thumbnail {
+  margin-bottom: 0;
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
 }
 
 section {
@@ -352,6 +354,13 @@ section {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+
+.footer {
+  padding-top: 45px;
+  color: #d5d5d5;
+  background-color: #232323;
+}
+
 @media (min-width: 576px) {
   .header-logo__title {
     font-size: 3.5rem;
@@ -369,6 +378,7 @@ section {
     font-size: 2.5rem;
   }
 }
+
 @media (min-width: 768px) {
   .navbar-inverse .navbar-nav > li > a {
     border-radius: 4px;
@@ -380,6 +390,13 @@ section {
     margin: 5px 0 5px 5px;
   }
 }
+
+@media (max-width: 991.8px) {
+  .vertical-slider {
+    display: none;
+  }
+}
+
 @media (max-width: 767.8px) {
   .navbar-inverse .navbar-nav > li > a {
     text-align: center;
@@ -391,8 +408,34 @@ section {
     margin-top: 0;
   }
 }
+
 @media (max-width: 575.8px) {
   .header-logo__title {
     font-size: 2.5rem;
+  }
+  .new-films-title {
+    margin: 0 0 1em;
+    font-size: 2rem;
+  }
+  .top-films-week-title {
+    margin: 45px 0 30px 45px;
+    font-size: 1.75rem;
+  }
+  .movie-news-title {
+    margin: 45px 0 30px 45px;
+    font-size: 1.75rem;
+  }
+  .movie-news-item h3 {
+    font-size: 1.25rem;
+  }
+  .movie-news-item:hover h3 > a {
+    color: #df8a13;
+  }
+  .movie-news-item:hover .thumbnail {
+    background-color: #df8a13;
+    border-color: #df8a13;
+  }
+  .movie-news-item:hover .movie-news-item__btn {
+    background-color: #df8a13;
   }
 }

@@ -16,51 +16,182 @@
 {
     &-row
     {
-        margin-right: -15px / 2;
-        margin-left: -15px / 2;
+        margin-right: -7.5px;
         margin-bottom: -15px;
+        margin-left: -7.5px;
     }
-    &-title{
-      @include xs-min{
-        font-size: 3rem;
-      }
-      &::after{
-        position: absolute;
-        width: 100%;
-        margin: 0.85em 0 0 $gap;
-        content: "";
-        border-bottom: 3px solid $color-accent;
-      }
+    &-title
+    {
+        @include xs-min
+        {
+            font-size: 3rem;
+
+            margin: -9.99999999px 0 1em 0;
+        }
+        &::after
+        {
+            position: absolute;
+
+            width: 100%;
+            margin: .85em 0 0 $gap;
+
+            content: '';
+
+            border-bottom: 3px solid $color-accent-light;
+        }
     }
     &-item
     {
-        padding-right: 15px / 2;
-        padding-left: 15px / 2;
         margin-bottom: 15px;
+        padding-right: 7.5px;
+        padding-left: 7.5px;
 
         &__title
         {
-            @include text-shortener;
             font-size: 1rem;
             font-weight: bold;
+
             margin: 0;
+
+            @include text-shortener;
         }
-        &__caption{
-          text-align: center;
+        &__caption
+        {
+            text-align: center;
         }
-        &__thumbnail{
-          margin-bottom: 0;
-          &:hover{
-            background-color: $color-accent-light;
-          }
-          &:hover h3{
-            color: $color-white;
-          }
+        &__thumbnail
+        {
+            margin-bottom: 0;
+            &:hover
+            {
+                background-color: $color-accent-light;
+            }
+            &:hover h3
+            {
+                color: $color-white;
+            }
         }
     }
 }
 
-section{
-  position: relative;
-  overflow: hidden;
+.top-films-week{
+  &-row
+  {
+      margin-right: -7.5px;
+      margin-bottom: -15px;
+      margin-left: -7.5px;
+  }
+
+  &-title{
+    @include xs-min{
+      margin: 60px 0 45px 45px;
+      font-size: 2.5rem;
+    }
+    &::before{
+      position: absolute;
+
+            width: 30px;
+            margin: .25em 0 0 0;
+            left: 0;
+            content: '';
+
+            border-bottom: 3px solid $color-accent-light;
+    }
+    &::after{
+      position: absolute;
+        width: 100%;
+            margin: .85em 0 0 $gap;
+            content: '';
+
+            border-bottom: 3px solid $color-accent-light;
+    }
+  }
+  &-item
+    {
+        margin-bottom: 15px;
+        padding-right: 7.5px;
+        padding-left: 7.5px;
+
+        &__title
+        {
+            font-size: 1rem;
+            font-weight: bold;
+
+            margin: 0;
+
+            @include text-shortener;
+        }
+        &__caption
+        {
+            text-align: center;
+        }
+        &__thumbnail
+        {
+            margin-bottom: 0;
+            &:hover
+            {
+                background-color: $color-accent-light;
+            }
+            &:hover h3
+            {
+                color: $color-white;
+            }
+        }
+    }
+}
+
+.movie-news{
+  &-title{
+    @include xs-min{
+      margin: 60px 0 45px 45px;
+      font-size: 2.5rem;
+    }
+    &::before{
+      position: absolute;
+
+            width: 30px;
+            margin: .25em 0 0 0;
+            left: 0;
+            content: '';
+
+            border-bottom: 3px solid $color-accent-light;
+    }
+    &::after{
+      position: absolute;
+        width: 100%;
+            margin: .85em 0 0 $gap;
+            content: '';
+
+            border-bottom: 3px solid $color-accent-light;
+    }
+  }
+  &-item{
+    &:hover{
+      h3 > a{
+        color: $color-accent;
+      }
+      .thumbnail{
+        background-color: $color-accent;
+        border-color: $color-accent;
+      }
+      .movie-news-item__btn{
+        background-color: $color-accent;
+      }
+    }
+    &__btn{
+      float: right;
+      margin-bottom: $gap * 2;
+      transition: background-color 0.25s;
+    }
+    &__content{
+      text-align: justify;
+    }
+  }
+}
+
+section
+{
+    position: relative;
+
+    overflow: hidden;
 }

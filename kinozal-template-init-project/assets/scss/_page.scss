@@ -1,0 +1,109 @@
+.page-film
+{
+    h1
+    {
+        @include xs-min
+        {
+            font-size: 3rem;
+
+            margin: -9.99999999px 0 1em 0;
+        }
+        @include xs
+        {
+            font-size: 2rem;
+
+            margin: 0 0 1em;
+        }
+        &::after
+        {
+            position: absolute;
+
+            width: 100%;
+            margin: .85em 0 0 $gap;
+
+            content: '';
+
+            border-bottom: 3px solid $color-accent-light;
+        }
+    }
+    h2
+    {
+        @include xs-min
+        {
+            font-size: 2.5rem;
+
+            margin: 60px 0 45px 45px;
+        }
+        @include xs
+        {
+            font-size: 1.75rem;
+
+            margin: 45px 0 30px 45px;
+        }
+        &::before
+        {
+            position: absolute;
+            left: 0;
+
+            width: 30px;
+            margin: .25em 0 0 0;
+
+            content: '';
+
+            border-bottom: 3px solid $color-accent-light;
+        }
+        &::after
+        {
+            position: absolute;
+
+            width: 100%;
+            margin: .85em 0 0 $gap;
+
+            content: '';
+
+            border-bottom: 3px solid $color-accent-light;
+        }
+    }
+    &-info
+    {
+        font-size: 1.2em;
+        &__wrapper
+        {
+            white-space: nowrap;
+            &:not(:last-of-type)
+            {
+                margin-right: $gap;
+            }
+        }
+        &__badge
+        {
+            font-size: .8em;
+        }
+    }
+    &-description
+    {
+        .well
+        {
+            border-color: $color-gray;
+            background-color: $color-gray-light;
+        }
+    }
+    &-comment-form
+    {
+        .form-group
+        {
+            margin-bottom: $gap;
+        }
+        &__button
+        {
+            float: right;
+        }
+    }
+}
+
+section
+{
+    position: relative;
+
+    overflow: hidden;
+}

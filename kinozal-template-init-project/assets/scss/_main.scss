@@ -217,23 +217,23 @@
                 font-size: 1.25rem;
             }
         }
-            &:hover
+        &:hover
+        {
+            h3 > a
             {
-                h3 > a
-                {
-                    color: $color-accent;
-                }
-                .thumbnail
-                {
-                    border-color: $color-accent;
-                    background-color: $color-accent;
-                }
-                .movie-news-item__btn
-                {
-                    background-color: $color-accent;
-                }
+                color: $color-accent;
             }
-        
+            .thumbnail
+            {
+                border-color: $color-accent;
+                background-color: $color-accent;
+            }
+            .movie-news-item__btn
+            {
+                background-color: $color-accent;
+            }
+        }
+
         &__btn
         {
             float: right;

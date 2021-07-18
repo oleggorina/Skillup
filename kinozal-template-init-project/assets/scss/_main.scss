@@ -216,6 +216,7 @@
             {
                 font-size: 1.25rem;
             }
+        }
             &:hover
             {
                 h3 > a
@@ -232,7 +233,7 @@
                     background-color: $color-accent;
                 }
             }
-        }
+        
         &__btn
         {
             float: right;
@@ -253,6 +254,7 @@
         }
     }
 }
+
 
 section
 {

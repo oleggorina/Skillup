@@ -1,5 +1,41 @@
-.footer{
-  padding-top: 45px;
-  color: $color-gray;
-  background-color: $color-dark;
+.footer
+{
+    padding-top: 45px;
+
+    color: $color-gray;
+    background-color: $color-dark;
+
+    ul
+    {
+        padding: 0;
+
+        list-style: none;
+        a
+        {
+            color: $color-gray-dark;
+            &:hover
+            {
+                color: $color-gray;
+            }
+        }
+    }
+
+    &-copy
+    {
+        a
+        {
+            color: $color-gray;
+            &:hover
+            {
+                color: $color-white;
+            }
+        }
+    }
+
+    &-fifth
+    {
+        margin: 20px 0;
+
+        text-align: center;
+    }
 }

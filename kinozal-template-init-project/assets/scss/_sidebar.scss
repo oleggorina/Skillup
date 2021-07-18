@@ -13,12 +13,14 @@
     overflow: hidden;
 
     border-radius: 4px;
+
+    @include md
+    {
+        display: none;
+    }
     img
     {
         width: 100%;
-    }
-    @include md{
-        display: none;
     }
 }
 

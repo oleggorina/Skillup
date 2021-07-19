@@ -303,16 +303,6 @@ section {
   border-radius: 4px 4px 0 0;
 }
 
-.panel {
-  border: none;
-  background-color: #f4f4f4;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-.panel:last-of-type {
-  margin-bottom: 0;
-}
-
 section {
   position: relative;
   overflow: hidden;

@@ -54,12 +54,11 @@
     position: relative;
 
     clear: both;
-    &:not(:last-of-type)
+    &:not(:last-child)
     {
         min-height: 85px;
         margin-bottom: $gap;
-    }
-    &::after
+        &::after
     {
         position: absolute;
         right: 0;
@@ -71,6 +70,7 @@
         content: '';
 
         background-color: $color-gray;
+    }
     }
     &__image
     {

@@ -101,6 +101,24 @@
     }
 }
 
+.embed-responsive
+{
+    border: 1px solid $color-gray;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+}
+
+.panel
+{
+    border: none;
+    background-color: $color-gray-light;
+    box-shadow: none;
+    &:last-of-type
+    {
+        margin-bottom: 0;
+    }
+}
+
 section
 {
     position: relative;

@@ -23,12 +23,12 @@ class Carousel {
 
   _initControls(){
     const controls = document.createElement('div');
-    const PAUSE = `<span id="pause-btn" class="control control-pause">
+    const PAUSE = `<span id="pause-btn" class="control-pause">
                       <span id="fa-pause-icon">${this.FA_PAUSE}</span>
                       <span id="fa-play-icon">${this.FA_PLAY}</span>
                    </span>`;
-    const PREV = `<span id="prev-btn" class="control control-prev">${this.FA_PREV}</span>`;
-    const NEXT = `<span id="next-btn" class="control control-next">${this.FA_NEXT}</span>`;
+    const PREV = `<span id="prev-btn" class="control-prev">${this.FA_PREV}</span>`;
+    const NEXT = `<span id="next-btn" class="control-next">${this.FA_NEXT}</span>`;
 
     controls.setAttribute('class', 'controls');
     controls.innerHTML = PAUSE + PREV + NEXT;
@@ -69,8 +69,8 @@ class Carousel {
     this.nextButton.addEventListener('click', this.next.bind(this));
     this.indContainer.addEventListener('click', this._indicate.bind(this));
     document.addEventListener('keydown', this.pressKey.bind(this));
-    this.container.addEventListener('mouseenter', this._pause.bind(this));
-    this.container.addEventListener('mouseleave', this._play.bind(this));
+    this.pauseButton.addEventListener('mouseenter', this._pause.bind(this));
+    this.pauseButton.addEventListener('mouseleave', this._play.bind(this));
   }
 
   _gotoSlide(n){

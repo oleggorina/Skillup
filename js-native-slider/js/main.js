@@ -1,7 +1,6 @@
 const carousel = new SwipeCarousel({
   containerID: '#myCarouselID',
-  interval: 1000,
-  isPlaying: false,
+  interval: 5000,
   slideID: '.myCustomClass'
 });
 

@@ -1,0 +1,35 @@
+.indicators{
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  .active{
+    background-color: #ffffffff;
+    text-shadow: 0 0 10px #ffffffff;
+    opacity: 1;
+  }
+}
+
+.indicator{ 
+  width: 30px;
+  height: 3px;
+  margin: -40px 7.5px 0;
+  background-color: #fff;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  outline: none;
+  background-clip: padding-box;
+  transform: opacity .6s ease;
+
+  &:hover{
+    cursor: pointer;
+  }
+
+}

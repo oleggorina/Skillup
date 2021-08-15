@@ -89,3 +89,15 @@ just for appearance; change whatever you want
 .active {
 background-color: red;
 }
+
+.control-pause{
+  position: relative;
+}
+
+.control-pause span{
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}

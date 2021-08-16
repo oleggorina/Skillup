@@ -26,6 +26,11 @@
     transition: opacity 0.25s ease-out;
     opacity: 0;
 
+    &:hover,
+    &:focus{
+      opacity: 1;
+    }
+
     span{
       position: absolute;
       display: block;
@@ -37,7 +42,7 @@
     left: 0;
     width: 10%;
     color: #ffffffff;
-    opacity: 0.5;
+    opacity: 0.7;
     font-size: 40px;
     top: 0;
 
@@ -53,7 +58,7 @@
     right: 0;
     width: 10%;
     color: #ffffffff;
-    opacity: 0.5;
+    opacity: 0.7;
     font-size: 40px;
     top: 0;
 

@@ -378,7 +378,7 @@ template {
   font-size: 32px;
   font-style: "Roboto Slab", serif;
 }
-.slide span {
+.slide-container span {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -389,12 +389,8 @@ template {
   border-radius: 10px;
   font-size: 18px;
 }
-.slide span:hover {
+.slide-container span:hover {
   cursor: pointer;
-  opacity: 1;
-}
-.slide span:hover .fa-pause-circle,
-.slide span:hover .fa-play-circle {
   opacity: 1;
 }
 .slide__image {

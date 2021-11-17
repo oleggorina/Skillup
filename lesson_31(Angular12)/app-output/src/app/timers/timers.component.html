@@ -1,0 +1,17 @@
+<h2>Таймеры</h2>
+
+<h3>Таймер 1</h3>
+<app-timer-item (tick)="log($event, 0)"></app-timer-item>
+<p>Таймер №1 передал в родительский компонент событие: 
+  <b>{{tickLog[0]}}</b>
+</p>
+<h3>Таймер 2</h3>
+<app-timer-item (tick)="log($event, 1)" [timerInterval]= "5000"></app-timer-item>
+<p>Таймер №2 передал в родительский компонент событие: 
+  <b>{{tickLog[1]}}</b>
+</p>
+<h3>Таймер 3</h3>
+<app-timer-item (tick)="log($event, 2)" [timerInterval]= "10000"></app-timer-item>
+<p>Таймер №3 передал в родительский компонент событие: 
+  <b>{{tickLog[2]}}</b>
+</p>

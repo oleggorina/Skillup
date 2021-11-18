@@ -1,0 +1,26 @@
+<form>
+  <div class="mb-3">
+    <label for="name">Имя:</label>
+    <input class="form-control" id="name" type="text" name="name" 
+    required [(ngModel)]="model.name">
+  </div>
+  <div class="mb-3">
+    <label for="age">Возраст:</label>
+    <input class="form-control" id="age" type="text" name="age" 
+    required [(ngModel)]="model.age">
+  </div>
+  <div class="mb-3">
+    <label for="role">Роль:</label>
+    <select name="role" id="role" class="form-select" [(ngModel)]="model.role">
+      <option *ngFor="let role of roles" [value]="role">{{role}}</option>
+    </select>
+  </div>
+
+  <div class="mb-3">
+    <button class="btn btn-info">Сохранить</button>
+  </div>
+</form>
+
+<p>
+  {{diagnostic}}
+</p>

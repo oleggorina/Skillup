@@ -1,21 +1,17 @@
-<form>
+<form #userForm="ngForm" (ngSubmit)="onSubmit()">
   <div class="mb-3">
     <label for="name">Имя:</label>
     <input class="form-control" id="name" type="text" name="name" 
-    required minlength="4" maxlength="10" [(ngModel)]="model.name" #name="ngModel"
-    placeholder="Имя">
+    required minlength="4" maxlength="10" [(ngModel)]="model.name" placeholder="Имя">
     <div class="alert alert-danger"
-         *ngIf="name.invalid && (name.dirty || name.touched)">
-        <div *ngIf="name.errors && name.errors.required">Имя обязательно</div>
-        <div *ngIf="name.errors && name.errors.minlength">Имя должно содержать минимум 4 символа</div>
-        </div>
+         *ngIf="formErrors.name">{{formErrors.name}}</div>
   </div>
   <div class="mb-3">
     <label for="age">Возраст:</label>
     <input class="form-control" id="age" type="text" name="age" 
-    required [(ngModel)]="model.age" #age="ngModel" placeholder="Возраст">
+    required [(ngModel)]="model.age" placeholder="Возраст">
     <div class="alert alert-danger"
-         *ngIf="age.invalid && (age.dirty || age.touched)">Возраст обязателен</div>
+         *ngIf="formErrors.age">{{formErrors.age}}</div>
   </div>
   <div class="mb-3">
     <label for="role">Роль:</label>
@@ -26,10 +22,6 @@
   </div>
 
   <div class="mb-3">
-    <button class="btn btn-info">Сохранить</button>
+    <button class="btn btn-info" [disabled]="userForm.form.invalid">Сохранить</button>
   </div>
 </form>
-
-<p>
-  {{diagnostic}}
-</p>

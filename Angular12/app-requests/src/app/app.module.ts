@@ -1,5 +1,6 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 
@@ -17,7 +18,8 @@ import { RequestsComponent } from './requests/requests.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {apiBase: '/', delay: 1000})
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {apiBase: '/', delay: 1000}),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
